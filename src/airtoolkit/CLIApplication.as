@@ -22,7 +22,6 @@ package airtoolkit
 	/**
 	 * コマンドラインActionScriptアプリケーションの基本
 	 * 
-	 * @author Kensaku Araga<araga-kensaku@kayac.com>
 	 * @version $Id$ 
 	 */
 	public class CLIApplication extends Sprite

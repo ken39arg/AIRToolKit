@@ -22,10 +22,6 @@ package ken39arg.commands
 	/**
 	 * commandsパッケージで使用されるコマンドのルートとなる抽象クラス。
 	 * 独自のコマンドクラスを作成する場合には、基本的にこのクラスを継承してください。
-	 * 
-	 * update K.Araga
-	 * Errorイベントも定義しました
-	 * Error時はcancelを呼び出すつもりです
 	 */
 	public class CommandBase extends EventDispatcher implements ICommand
 	{

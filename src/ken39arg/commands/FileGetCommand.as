@@ -37,10 +37,7 @@ package ken39arg.commands
 		
 		override public function execute():void
 		{
-			trace("{FileGetCommand}:"+_fileName);
-			
 			if (_fileName.indexOf("http") > -1) {
-				trace("load http");
 				// http
 				var command:LoaderCommand = new LoaderCommand({
 					'loader': loader,
@@ -52,7 +49,6 @@ package ken39arg.commands
 				command.execute();
 				
 			} else {
-				trace("load local");
 				// local
 				try {
 					var file:File = new File(_fileName);
@@ -80,7 +76,6 @@ package ken39arg.commands
 		
 		private function httpLoaderCompleteHandler(event:Event):void
 		{
-			trace("http load complete");
 			event.target.removeEventListener(Event.COMPLETE, httpLoaderCompleteHandler);
 			event.target.removeEventListener(ErrorEvent.ERROR, httpLoaderErrorHandler);
 			dispatchComplete();
@@ -88,7 +83,6 @@ package ken39arg.commands
 
 		private function httpLoaderErrorHandler(event:ErrorEvent):void
 		{
-			trace("http load error");
 			event.target.removeEventListener(Event.COMPLETE, httpLoaderCompleteHandler);
 			event.target.removeEventListener(ErrorEvent.ERROR, httpLoaderErrorHandler);
 			dispatchError(event.toString());

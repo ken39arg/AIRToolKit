@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/1.5.2">
+	<id>Rasterize</id>
+	<filename>Rasterize</filename>
+	<name>Rasterize</name>
+	<version>1.0.0</version>
+	<initialWindow>
+		<content>Rasterize.swf</content>
+	</initialWindow>
+</application>

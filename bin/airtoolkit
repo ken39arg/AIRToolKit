@@ -1,0 +1,14 @@
+#! /bin/sh
+# alias to adl
+ADL=adl
+if [ ${1:-0} = 0 ]
+then
+        echo "usage: % airtoolkit command args..."
+        exit
+fi
+path=${0%/*}
+application=$1
+shift
+${ADL} ${path}/tools/${application}-app.xml -- $* 
+
+exit

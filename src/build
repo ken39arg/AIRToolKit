@@ -1,0 +1,2 @@
+#! /bin/sh
+amxmlc -output bin/tools/Rasterize.swf src/Rasterize.as -compiler.source-path src/
